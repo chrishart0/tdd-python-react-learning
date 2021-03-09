@@ -1,0 +1,24 @@
+version: '3'
+services:
+  api:
+    # Path to dockerfile.
+    # '.' represents the current directory in which
+    # docker-compose.yml is present.
+    build: api/.
+
+    # Mapping of container port to host
+    
+    ports:
+      - "1000:80"
+    
+  ui:
+    # Path to dockerfile.
+    # '.' represents the current directory in which
+    # docker-compose.yml is present.
+    build: ui/.
+
+    # Mapping of container port to host
+    
+    ports:
+      - "1001:80"
+    
